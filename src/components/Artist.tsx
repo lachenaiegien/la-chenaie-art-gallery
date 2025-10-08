@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Palette, Globe } from "lucide-react";
+import artisteImage from "@/assets/artiste.png";
 
 const Artist = () => {
   return (
@@ -8,27 +9,60 @@ const Artist = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Artist Info */}
+            {/* Artist Photo */}
             <div className="animate-gallery-fade-in">
+              <img 
+                src={artisteImage} 
+                alt="Jingyu BAI" 
+                className="w-full h-auto rounded-lg shadow-gallery-soft"
+              />
+            </div>
+
+            {/* Artist Info */}
+            <div className="animate-gallery-scale-in">
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 Jingyu BAI
               </h2>
               
               <p className="text-xl text-gallery-gold font-medium mb-6">
-                Sculpteur Contemporain International
+                Artiste plasticien<br />
+                Œuvres monumentales
               </p>
 
               <div className="prose prose-lg text-muted-foreground mb-8">
                 <p className="leading-relaxed">
-                  Jingyu BAI est un artiste sculpteur reconnu internationalement pour ses œuvres monumentales 
-                  qui explorent l'interaction entre forme, lumière et espace. Ses créations en acier inoxydable 
-                  et corten révèlent une maîtrise technique exceptionnelle au service d'une vision artistique profonde.
+                  Né en juillet 1988 à Datong City dans la province de SHANXI en CHINE, Jingyu est issu 
+                  d'une grande famille d'artistes.
                 </p>
                 
                 <p className="leading-relaxed">
-                  Né en Chine et formé aux beaux-arts, Jingyu BAI développe un langage sculptural unique qui 
-                  transcende les frontières culturelles. Ses œuvres, présentes dans de prestigieuses collections 
-                  privées et publiques, questionnent notre rapport au temps, à l'espace et à la beauté.
+                  Très jeune, il démontre vite ses aptitudes aux dessins et c'est tout naturellement qu'il 
+                  intègre une des plus belles écoles Chinoises d'art et de sculpture.
+                </p>
+
+                <p className="leading-relaxed">
+                  Après avoir testé plusieurs matières telles que la terre et la pierre, c'est dans le métal 
+                  qu'il s'avère le plus créatif.
+                </p>
+
+                <p className="leading-relaxed">
+                  Ses œuvres contemporaines sont tout d'abord imaginées à travers des dessins puis 
+                  dans son propre atelier il exécute la totalité de ses performances.
+                </p>
+
+                <p className="leading-relaxed">
+                  Sa passion l'emporte vers des conceptions de plus en plus monumentales pouvant 
+                  atteindre des hauteurs de plusieurs mètres.
+                </p>
+
+                <p className="leading-relaxed">
+                  Encore très jeune dans l'espace artistique Jingyu BAI s'avère de plus en plus reconnu 
+                  pour la qualité et l'imaginaire de ses compositions contemporaines.
+                </p>
+
+                <p className="leading-relaxed font-medium">
+                  LA CHÊNAIE Art Contemporain a le plaisir de représenter son travail auprès des 
+                  galeries d'art moderne et des expositions temporaires.
                 </p>
               </div>
 
@@ -39,53 +73,15 @@ const Artist = () => {
                 </Badge>
                 <Badge variant="secondary" className="px-3 py-1">
                   <Award className="w-4 h-4 mr-2" />
-                  Artiste International
+                  Artiste Plasticien
                 </Badge>
                 <Badge variant="secondary" className="px-3 py-1">
                   <Globe className="w-4 h-4 mr-2" />
-                  Expositions Mondiales
+                  CHINE - SHANXI
                 </Badge>
               </div>
             </div>
 
-            {/* Artistic Philosophy */}
-            <div className="space-y-6 animate-gallery-scale-in">
-              <Card className="p-8 bg-card border-border shadow-gallery-soft">
-                <h3 className="text-2xl font-bold text-foreground mb-4">
-                  Philosophie Artistique
-                </h3>
-                <blockquote className="text-muted-foreground italic text-lg leading-relaxed border-l-4 border-gallery-gold pl-6">
-                  "Mes sculptures sont des dialogues silencieux entre l'homme et son environnement. 
-                  Chaque courbe, chaque reflet raconte une histoire d'harmonie et d'équilibre, 
-                  invitant le spectateur à redécouvrir la beauté du monde qui l'entoure."
-                </blockquote>
-                <cite className="text-gallery-gold font-medium mt-4 block">
-                  — Jingyu BAI
-                </cite>
-              </Card>
-
-              <div className="grid grid-cols-2 gap-6">
-                <Card className="p-6 bg-card border-border shadow-gallery-soft text-center">
-                  <div className="text-3xl font-bold text-gallery-gold mb-2">15+</div>
-                  <div className="text-sm text-muted-foreground">Années d'expérience</div>
-                </Card>
-                
-                <Card className="p-6 bg-card border-border shadow-gallery-soft text-center">
-                  <div className="text-3xl font-bold text-gallery-gold mb-2">50+</div>
-                  <div className="text-sm text-muted-foreground">Œuvres créées</div>
-                </Card>
-                
-                <Card className="p-6 bg-card border-border shadow-gallery-soft text-center">
-                  <div className="text-3xl font-bold text-gallery-gold mb-2">20+</div>
-                  <div className="text-sm text-muted-foreground">Pays d'exposition</div>
-                </Card>
-                
-                <Card className="p-6 bg-card border-border shadow-gallery-soft text-center">
-                  <div className="text-3xl font-bold text-gallery-gold mb-2">100+</div>
-                  <div className="text-sm text-muted-foreground">Collections privées</div>
-                </Card>
-              </div>
-            </div>
           </div>
         </div>
       </div>
