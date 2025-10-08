@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Globe, MapPin } from "lucide-react";
@@ -179,6 +180,8 @@ const Artists = () => {
           </div>
         </section>
       </main>
+      
+      <Footer />
     </div>
   );
 };

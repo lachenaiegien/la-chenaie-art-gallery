@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Grid, List, Filter } from "lucide-react";
 import ArtworkCard from "@/components/ArtworkCard";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 // Import des images
@@ -286,6 +287,8 @@ const Gallery = () => {
           </div>
         </section>
       </main>
+      
+      <Footer />
     </div>
   );
 };
