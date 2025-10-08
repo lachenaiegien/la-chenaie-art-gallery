@@ -27,6 +27,7 @@ interface Artwork {
   description: string;
   category: 'sculpture' | 'tableau';
   style: 'contemporain' | 'moderne' | 'abstrait';
+  downloadUrl?: string;
 }
 
 const Gallery = () => {
@@ -38,87 +39,94 @@ const Gallery = () => {
   const artworks: Artwork[] = [
     {
       id: '1',
-      title: "Flammes Douces",
+      title: "Flamme douce",
       artist: "Jingyu BAI",
       image: flammesDoucesImage,
-      year: "2024",
-      material: "Acier inoxydable poli",
-      dimensions: "2.50m x 1.20m x 0.80m",
-      description: "Une sculpture fluide qui capture la danse éternelle des flammes dans le métal poli, reflétant la lumière naturelle du domaine.",
+      year: "2025",
+      material: "Acier inox poli miroir",
+      dimensions: "Hauteur : 1 mètre",
+      description: "Réalisée en acier inoxydable 316, flamme douce élance ses courbes fluides vers le ciel. Elle capte la lumière, la réfracte en éclairage changeant et invite à une contemplation silencieuse. Symbole d'énergie apaisée, elle s'intègre harmonieusement dans tous les espaces intérieurs comme extérieurs.",
       category: 'sculpture',
-      style: 'contemporain'
+      style: 'contemporain',
+      downloadUrl: '/fiches/Fiches_art.pdf' // À remplacer par le lien Drive
     },
     {
       id: '2',
-      title: "Danse des Reflets",
+      title: "Danse des reflets",
       artist: "Jingyu BAI", 
       image: danseRefletsImage,
-      year: "2024",
-      material: "Acier inoxydable poli",
-      dimensions: "2.20m x 1.00m x 0.90m",
-      description: "Les formes entrelacées créent un jeu infini de reflets, symbolisant l'harmonie entre l'art contemporain et l'architecture classique.",
+      year: "2025",
+      material: "Acier inox poli miroir",
+      dimensions: "Hauteur : 2 mètres",
+      description: "Danse des reflets s'élance avec grâce vers la lumière. Les lignes élancées, émouvantes, captent l'environnement et le transforment en une chorégraphie de reflets changeant cette œuvre. Elle invite le spectateur à entrer dans un dialogue entre ciel et terre, entre présence et transparence. Placée dans un espace ouvert ou intérieur, elle devient un écrin de lumière et d'harmonie.",
       category: 'sculpture',
-      style: 'contemporain'
+      style: 'contemporain',
+      downloadUrl: '/fiches/Fiches_art.pdf' // À remplacer par le lien Drive
     },
     {
       id: '3',
-      title: "Danse du Temps",
+      title: "Danse du temps",
       artist: "Jingyu BAI",
       image: danseTempsImage,
-      year: "2024", 
+      year: "2025", 
       material: "Acier corten",
-      dimensions: "2.80m x 1.40m x 1.10m",
-      description: "La patine naturelle du corten évoque le passage du temps, tandis que les formes dynamiques célèbrent l'instant présent.",
+      dimensions: "Hauteur : 2 mètres",
+      description: "Cette sculpture, réalisée en acier corten, présente une matière brute dont la surface oxydée évolue avec le temps. Sa patine aux teintes chaudes et terreuses incarne le passage des saisons. Chaque nuance témoigne de la mémoire du métal, face aux éléments. Par cette transformation continue, l'œuvre illustre la danse du temps, en permanente métamorphose dans une harmonie chorégraphie.",
       category: 'sculpture',
-      style: 'contemporain'
+      style: 'contemporain',
+      downloadUrl: '/fiches/Fiches_art.pdf' // À remplacer par le lien Drive
     },
     {
       id: '4',
       title: "Harmonie",
       artist: "Jingyu BAI",
       image: harmonieImage,
-      year: "2024",
-      material: "Acier inoxydable poli",
-      dimensions: "2.60m x 1.30m x 0.95m", 
-      description: "Des courbes parfaites qui s'entrelacent dans un équilibre délicat, incarnant la recherche perpétuelle d'harmonie.",
+      year: "2025",
+      material: "Acier inox poli miroir",
+      dimensions: "Hauteur : 2 mètres", 
+      description: "Cette œuvre incarne l'équilibre subtil entre force et légèreté. Ses lignes pures et fluides, s'élancent dans l'espace, comme une mélodie sculptée, reflétant le monde environnant dans une unité apaisée. Harmonie invite à une contemplation sereine, à la recherche d'un accord parfait entre matière, lumière et esprit.",
       category: 'sculpture',
-      style: 'abstrait'
+      style: 'abstrait',
+      downloadUrl: '/fiches/Fiches_art.pdf' // À remplacer par le lien Drive
     },
     {
       id: '5',
       title: "Énigme",
       artist: "Jingyu BAI",
       image: enigmeImage,
-      year: "2024",
+      year: "2025",
       material: "Acier corten",
-      dimensions: "2.40m x 1.15m x 0.85m",
-      description: "Une forme mystérieuse qui interroge et fascine, invitant le spectateur à découvrir ses secrets cachés.",
+      dimensions: "Hauteur : 2 mètres",
+      description: "Cette sculpture révèle un mystère profondément enraciné dans la matière brute. Sa surface oxydée, marquée par le temps, dévoile graduellement des teintes chaudes qui suggèrent des secrets enfouis et le souvenir d'histoire ancienne. Au fil de sa transformation naturelle, l'œuvre joue sur la dualité entre l'apparente solidité de l'acier et l'évolution organique de la patine, invitant le spectateur à contempler la poésie du changement et de la mémoire inscrit dans le métal.",
       category: 'sculpture',
-      style: 'abstrait'
+      style: 'abstrait',
+      downloadUrl: '/fiches/Fiches_art.pdf' // À remplacer par le lien Drive
     },
     {
       id: '6',
       title: "Aria",
       artist: "Jingyu BAI",
       image: ariaImage,
-      year: "2024",
-      material: "Acier inoxydable poli",
-      dimensions: "2.70m x 1.25m x 1.00m",
-      description: "Comme une mélodie figée dans le métal, cette sculpture chante la beauté de la forme pure.",
+      year: "2025",
+      material: "Acier inox poli miroir",
+      dimensions: "Hauteur : 2 mètres",
+      description: "Aria s'élève telle une note de musique figée dans l'espace. Ses courbes aériennes reflètent la lumière comme une mélodie silencieuse, un souffle suspendu entre ciel et terre. Cette œuvre invite à ressentir l'harmonie de l'instant, à écouter la musique intérieure que le métal sublime.",
       category: 'sculpture',
-      style: 'contemporain'
+      style: 'contemporain',
+      downloadUrl: '/fiches/Fiches_art.pdf' // À remplacer par le lien Drive
     },
     {
       id: '7',
       title: "Infinite Loop",
       artist: "Jingyu BAI",
       image: infiniteLoopImage,
-      year: "2024",
-      material: "Acier inoxydable poli",
-      dimensions: "2.90m x 1.50m x 1.20m",
-      description: "Un parcours sans fin qui symbolise l'éternité, créant un dialogue permanent entre l'œuvre et son environnement.",
+      year: "2025",
+      material: "Acier inox poli miroir",
+      dimensions: "Hauteur : 2 mètres",
+      description: "Cette œuvre déploie sa forme en un mouvement continu qui ne connaît ni début ni fin. La lumière glisse sur ses courbes et se reflète à l'infini, créant un dialogue permanent entre espace et regard. Infini, Loop symbolise l'éternité et le flux incessant de l'existence, une boucle sculptée dans le temps.",
       category: 'sculpture',
-      style: 'contemporain'
+      style: 'contemporain',
+      downloadUrl: '/fiches/Fiches_art.pdf' // À remplacer par le lien Drive
     }
   ];
 

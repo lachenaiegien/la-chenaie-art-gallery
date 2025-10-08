@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { Eye, Maximize2 } from "lucide-react";
+import { Eye, Download } from "lucide-react";
 
 interface ArtworkCardProps {
   title: string;
@@ -12,6 +12,7 @@ interface ArtworkCardProps {
   year?: string;
   material?: string;
   dimensions?: string;
+  downloadUrl?: string;
 }
 
 const ArtworkCard = ({ 
@@ -21,7 +22,8 @@ const ArtworkCard = ({
   description,
   year,
   material,
-  dimensions 
+  dimensions,
+  downloadUrl
 }: ArtworkCardProps) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -85,7 +87,19 @@ const ArtworkCard = ({
                     )}
                     
                     {description && (
-                      <p className="text-muted-foreground leading-relaxed">{description}</p>
+                      <p className="text-muted-foreground leading-relaxed mb-6">{description}</p>
+                    )}
+                    
+                    {downloadUrl && (
+                      <Button
+                        asChild
+                        className="mt-auto"
+                      >
+                        <a href={downloadUrl} download target="_blank" rel="noopener noreferrer">
+                          <Download className="w-4 h-4 mr-2" />
+                          Télécharger la fiche
+                        </a>
+                      </Button>
                     )}
                   </div>
                 </div>
