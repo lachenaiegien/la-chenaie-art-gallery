@@ -105,19 +105,12 @@ const Venue = () => {
               </div>
 
               {/* CTA */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex justify-center">
                 <Button 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full shadow-gallery-medium flex-1"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full shadow-gallery-medium"
                   onClick={() => window.open('https://www.lachenaiecalmeetdetente.com/fr', '_blank')}
                 >
                   Site Officiel
-                </Button>
-                <Button 
-                  variant="outline"
-                  className="border-border text-foreground hover:bg-muted px-6 py-3 rounded-full flex-1"
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                  Réserver une Visite
                 </Button>
               </div>
             </div>

@@ -58,7 +58,7 @@ const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white/30 text-white hover:bg-white/10 hover:text-white px-8 py-3 rounded-full backdrop-blur-sm"
+              className="bg-transparent border-white text-white hover:bg-white/10 hover:text-white px-8 py-3 rounded-full"
               onClick={() => document.getElementById('venue')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Visiter le Domaine
