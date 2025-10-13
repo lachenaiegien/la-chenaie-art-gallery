@@ -11,6 +11,7 @@ const Header = () => {
     { name: "Accueil", href: "/" },
     { name: "Galerie", href: "/gallery" },
     { name: "Les Artistes", href: "/artists" },
+    { name: "Réservation", href: "/booking" },
   ];
 
   return (
