@@ -59,9 +59,9 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="bg-transparent border-white text-white hover:bg-white/10 hover:text-white px-8 py-3 rounded-full"
-              onClick={() => document.getElementById('venue')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.location.href = '/booking'}
             >
-              Visiter le Domaine
+              Réserver un Séjour
             </Button>
           </div>
         </div>

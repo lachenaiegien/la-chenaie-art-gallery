@@ -108,9 +108,9 @@ const Venue = () => {
               <div className="flex justify-center">
                 <Button 
                   className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full shadow-gallery-medium"
-                  onClick={() => window.open('https://www.lachenaiecalmeetdetente.com/fr', '_blank')}
+                  onClick={() => window.location.href = '/booking'}
                 >
-                  Site Officiel
+                  Réserver un Séjour
                 </Button>
               </div>
             </div>

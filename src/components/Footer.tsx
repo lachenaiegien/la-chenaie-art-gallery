@@ -32,6 +32,9 @@ const Footer = () => {
               <Link to="/artists" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
                 Les Artistes
               </Link>
+              <Link to="/booking" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
+                Réservation
+              </Link>
             </nav>
           </div>
           
