@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* La Chénaie Gallery Design System - Sophisticated art gallery with natural elegance
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Château stone and natural backgrounds */
+    --background: 45 25% 97%;
+    --foreground: 30 15% 15%;
+
+    /* Elegant cards with subtle warmth */
+    --card: 45 20% 95%;
+    --card-foreground: 30 15% 15%;
+
+    /* Refined popovers */
+    --popover: 45 20% 95%;
+    --popover-foreground: 30 15% 15%;
+
+    /* Château elegance - deep sophisticated tones */
+    --primary: 30 25% 20%;
+    --primary-foreground: 45 30% 95%;
+
+    /* Warm château stone */
+    --secondary: 40 15% 88%;
+    --secondary-foreground: 30 25% 20%;
+
+    /* Subtle garden tones */
+    --muted: 45 12% 90%;
+    --muted-foreground: 30 8% 45%;
+
+    /* Golden château accents */
+    --accent: 40 35% 75%;
+    --accent-foreground: 30 25% 20%;
+
+    /* Gentle warnings */
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 45 30% 95%;
+
+    /* Refined borders */
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 30 25% 20%;
+
+    --radius: 0.75rem;
+
+    /* Gallery-specific design tokens */
+    --gallery-hero: linear-gradient(135deg, hsl(45 25% 97%) 0%, hsl(40 20% 92%) 100%);
+    --gallery-sculpture: linear-gradient(135deg, hsl(210 15% 85%) 0%, hsl(200 20% 90%) 100%);
+    --gallery-gold: 42 85% 65%;
+    --gallery-forest: 140 30% 25%;
+    --gallery-stone: 35 15% 75%;
+    --gallery-shadow: 30 20% 20%;
+    
+    /* Elegant shadows */
+    --shadow-soft: 0 4px 20px hsl(30 20% 20% / 0.08);
+    --shadow-medium: 0 8px 30px hsl(30 20% 20% / 0.12);
+    --shadow-strong: 0 15px 40px hsl(30 20% 20% / 0.15);
+    
+    /* Smooth transitions */
+    --transition-elegant: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-quick: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Evening gallery ambiance */
+    --background: 30 15% 8%;
+    --foreground: 45 20% 92%;
+
+    --card: 30 15% 12%;
+    --card-foreground: 45 20% 92%;
+
+    --popover: 30 15% 12%;
+    --popover-foreground: 45 20% 92%;
+
+    --primary: 45 25% 90%;
+    --primary-foreground: 30 15% 8%;
+
+    --secondary: 30 10% 18%;
+    --secondary-foreground: 45 20% 92%;
+
+    --muted: 30 8% 15%;
+    --muted-foreground: 40 10% 65%;
+
+    --accent: 42 45% 55%;
+    --accent-foreground: 30 15% 8%;
+
+    --destructive: 0 55% 45%;
+    --destructive-foreground: 45 20% 92%;
+
+    --border: 30 10% 18%;
+    --input: 30 10% 18%;
+    --ring: 42 45% 55%;
+    
+    /* Dark mode gallery tokens */
+    --gallery-hero: linear-gradient(135deg, hsl(30 15% 8%) 0%, hsl(30 12% 12%) 100%);
+    --gallery-sculpture: linear-gradient(135deg, hsl(210 10% 20%) 0%, hsl(200 15% 25%) 100%);
+    --gallery-shadow: 30 20% 5%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
