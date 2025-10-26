@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
-import { CalendarIcon } from "lucide-react";
+import { CalendarIcon, ChevronLeft, ChevronRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -34,14 +34,47 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const accommodations = [
+  {
+    id: "domaine-complet",
+    name: "Domaine Complet",
+    price: 380,
+    description: "L'ensemble du domaine avec les 4 suites",
+    capacity: "8-12 personnes",
+    images: [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800",
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
+    ],
+    widgetId: "bookWidget-domaine-complet",
+    roomId: 619396,
+  },
   {
     id: "chenaie-gien",
     name: "La Chênaie Gien",
     price: 120,
     description: "Logement principal avec vue sur le parc",
     capacity: "2-4 personnes",
+    images: [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800",
+    ],
+    widgetId: "bookWidget-chenaie-gien",
+    roomId: 619396,
   },
   {
     id: "les-charmilles",
@@ -49,6 +82,12 @@ const accommodations = [
     price: 95,
     description: "Gîte chaleureux au cœur du domaine",
     capacity: "2-3 personnes",
+    images: [
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800",
+      "https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?w=800",
+    ],
+    widgetId: "bookWidget-les-charmilles",
+    roomId: 619396,
   },
   {
     id: "les-fresnes",
@@ -56,6 +95,12 @@ const accommodations = [
     price: 95,
     description: "Cottage confortable avec jardin privatif",
     capacity: "2-3 personnes",
+    images: [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
+      "https://images.unsplash.com/photo-1571508601936-4d4e9263f1c5?w=800",
+    ],
+    widgetId: "bookWidget-les-fresnes",
+    roomId: 619396,
   },
   {
     id: "les-accacias",
@@ -63,6 +108,12 @@ const accommodations = [
     price: 95,
     description: "Studio moderne et lumineux",
     capacity: "2 personnes",
+    images: [
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800",
+    ],
+    widgetId: "bookWidget-les-accacias",
+    roomId: 619396,
   },
 ];
 
@@ -80,6 +131,70 @@ const formSchema = z.object({
 const Booking = () => {
   const { toast } = useToast();
   const [selectedAccommodation, setSelectedAccommodation] = useState<string>("");
+  const [bookingDialogOpen, setBookingDialogOpen] = useState(false);
+  const [currentAccommodation, setCurrentAccommodation] = useState<typeof accommodations[0] | null>(null);
+
+  useEffect(() => {
+    // Load jQuery and jQueryUI
+    const jqueryScript = document.createElement('script');
+    jqueryScript.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+    jqueryScript.async = true;
+    document.head.appendChild(jqueryScript);
+
+    const jqueryUIScript = document.createElement('script');
+    jqueryUIScript.src = 'https://code.jquery.com/ui/1.13.2/jquery-ui.min.js';
+    jqueryUIScript.async = true;
+    document.head.appendChild(jqueryUIScript);
+
+    const jqueryUICSS = document.createElement('link');
+    jqueryUICSS.rel = 'stylesheet';
+    jqueryUICSS.href = 'https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css';
+    document.head.appendChild(jqueryUICSS);
+
+    const bookWidgetScript = document.createElement('script');
+    bookWidgetScript.src = 'https://media.xmlcal.com/widget/1.01/js/bookWidget.min.js';
+    bookWidgetScript.async = true;
+    document.head.appendChild(bookWidgetScript);
+
+    return () => {
+      document.head.removeChild(jqueryScript);
+      document.head.removeChild(jqueryUIScript);
+      document.head.removeChild(jqueryUICSS);
+      document.head.removeChild(bookWidgetScript);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (bookingDialogOpen && currentAccommodation) {
+      // Initialize booking widget after dialog opens
+      const timer = setTimeout(() => {
+        if (window.jQuery && window.jQuery.fn.bookWidget) {
+          window.jQuery(`#${currentAccommodation.widgetId}`).bookWidget({
+            roomid: currentAccommodation.roomId,
+            dateFormat: 'dd/mm/yy',
+            defaultNightsAdvance: 2,
+            defaultNumAdult: 1,
+            defaultNumNight: 2,
+            formAction: 'https://beds24.com/booking.php',
+            formTarget: 'bookingWindow',
+            maxAdult: currentAccommodation.id === 'domaine-complet' ? 12 : 4,
+            numMonth: 2,
+            weekFirstDay: 1,
+            widgetLang: 'fr',
+            widgetTitle: `Réservation ${currentAccommodation.name}`,
+            widgetType: 'AvailabilityCalendar',
+            width: 'auto'
+          });
+        }
+      }, 500);
+      return () => clearTimeout(timer);
+    }
+  }, [bookingDialogOpen, currentAccommodation]);
+
+  const handleBooking = (accommodation: typeof accommodations[0]) => {
+    setCurrentAccommodation(accommodation);
+    setBookingDialogOpen(true);
+  };
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -147,31 +262,50 @@ const Booking = () => {
               {accommodations.map((accommodation) => (
                 <Card
                   key={accommodation.id}
-                  className={cn(
-                    "p-6 cursor-pointer transition-all hover:shadow-gallery-soft",
-                    selectedAccommodation === accommodation.id
-                      ? "ring-2 ring-primary"
-                      : ""
-                  )}
-                  onClick={() => {
-                    setSelectedAccommodation(accommodation.id);
-                    form.setValue("accommodation", accommodation.id);
-                  }}
+                  className="overflow-hidden"
                 >
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    {accommodation.name}
-                  </h3>
-                  <p className="text-muted-foreground text-sm mb-2">
-                    {accommodation.description}
-                  </p>
-                  <p className="text-muted-foreground text-sm mb-4">
-                    {accommodation.capacity}
-                  </p>
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-3xl font-bold text-primary">
-                      {accommodation.price}€
-                    </span>
-                    <span className="text-muted-foreground">/ nuit</span>
+                  {/* Image Carousel */}
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      {accommodation.images.map((image, index) => (
+                        <CarouselItem key={index}>
+                          <div className="relative h-64 w-full">
+                            <img
+                              src={image}
+                              alt={`${accommodation.name} - Image ${index + 1}`}
+                              className="w-full h-full object-cover"
+                            />
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className="left-4" />
+                    <CarouselNext className="right-4" />
+                  </Carousel>
+
+                  {/* Content */}
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      {accommodation.name}
+                    </h3>
+                    <p className="text-muted-foreground text-sm mb-2">
+                      {accommodation.description}
+                    </p>
+                    <p className="text-muted-foreground text-sm mb-4">
+                      {accommodation.capacity}
+                    </p>
+                    <div className="flex items-baseline gap-2 mb-4">
+                      <span className="text-3xl font-bold text-primary">
+                        {accommodation.price}€
+                      </span>
+                      <span className="text-muted-foreground">/ nuit</span>
+                    </div>
+                    <Button
+                      onClick={() => handleBooking(accommodation)}
+                      className="w-full"
+                    >
+                      Réserver
+                    </Button>
                   </div>
                 </Card>
               ))}
@@ -440,8 +574,30 @@ const Booking = () => {
       </main>
 
       <Footer />
+
+      {/* Booking Widget Dialog */}
+      <Dialog open={bookingDialogOpen} onOpenChange={setBookingDialogOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle>
+              {currentAccommodation?.name}
+            </DialogTitle>
+          </DialogHeader>
+          <div className="mt-4">
+            {currentAccommodation && (
+              <div id={currentAccommodation.widgetId}></div>
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
 
 export default Booking;
+
+declare global {
+  interface Window {
+    jQuery: any;
+  }
+}
