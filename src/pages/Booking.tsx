@@ -148,23 +148,23 @@ const Booking = () => {
       
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Header */}
-            <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                Réservation
-              </h1>
-              <p className="text-xl text-muted-foreground">
-                Séjournez au Domaine La Chénaie et découvrez l'exposition
-              </p>
-            </div>
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              Réservation
+            </h1>
+            <p className="text-xl text-muted-foreground">
+              Séjournez au Domaine La Chénaie et découvrez l'exposition
+            </p>
+          </div>
 
-            {/* Domaine Complet Section */}
-            {domaineComplet && (
-              <div className="mb-16">
-                <h2 className="text-3xl font-bold text-foreground mb-6">
-                  Domaine Complet
-                </h2>
+          {/* Domaine Complet Section */}
+          {domaineComplet && (
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-foreground mb-6 text-center">
+                Domaine Complet
+              </h2>
+              <div className="max-w-4xl mx-auto">
                 <Card className="overflow-hidden">
                   {/* Image Carousel */}
                   <Carousel className="w-full">
@@ -197,7 +197,7 @@ const Booking = () => {
                       <p className="text-muted-foreground mb-4">
                         {domaineComplet.capacity}
                       </p>
-                      <div className="flex items-baseline gap-2">
+                      <div className="flex items-baseline gap-2 mb-6">
                         <span className="text-3xl font-bold text-primary">
                           {domaineComplet.price}€
                         </span>
@@ -209,21 +209,22 @@ const Booking = () => {
                     <div className="mb-6">
                       <div id={domaineComplet.widgetId}></div>
                     </div>
-
-                    <Button className="w-full" size="lg">
-                      Réserver le Domaine Complet
-                    </Button>
                   </div>
                 </Card>
+                <Button className="w-full mt-6" size="lg">
+                  Réserver le Domaine Complet
+                </Button>
               </div>
-            )}
+            </div>
+          )}
 
-            {/* Suites Section */}
-            <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">
-                Les Suites
-              </h2>
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
+          {/* Suites Section */}
+          <div>
+            <h2 className="text-3xl font-bold text-foreground mb-6 text-center">
+              Les Suites
+            </h2>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-6 mb-6">
                 {suites.map((suite) => (
                   <Card key={suite.id} className="overflow-hidden">
                     {/* Image Carousel */}
@@ -257,8 +258,8 @@ const Booking = () => {
                         <p className="text-muted-foreground text-sm mb-4">
                           {suite.capacity}
                         </p>
-                        <div className="flex items-baseline gap-2">
-                          <span className="text-3xl font-bold text-primary">
+                        <div className="flex items-baseline gap-2 mb-6">
+                          <span className="text-2xl font-bold text-primary">
                             {suite.price}€
                           </span>
                           <span className="text-muted-foreground">/ nuit</span>
@@ -272,7 +273,7 @@ const Booking = () => {
                 ))}
               </div>
 
-              <Button className="w-full" size="lg">
+              <Button className="w-full mt-6" size="lg">
                 Réserver une Suite
               </Button>
             </div>
