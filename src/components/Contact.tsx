@@ -111,27 +111,8 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="mt-2"
-                      placeholder="+33 6 12 34 56 78"
+                      placeholder="+33 6 XX XX XX XX"
                     />
-                  </div>
-                  
-                  <div>
-                    <Label htmlFor="visitType" className="text-foreground font-medium">
-                      Type de visite *
-                    </Label>
-                    <select
-                      id="visitType"
-                      name="visitType"
-                      value={formData.visitType}
-                      onChange={handleInputChange}
-                      required
-                      className="mt-2 w-full px-3 py-2 border border-border rounded-md bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-                    >
-                      <option value="individual">Visite individuelle</option>
-                      <option value="group">Visite de groupe</option>
-                      <option value="private">Événement privé</option>
-                      <option value="guided">Visite guidée</option>
-                    </select>
                   </div>
                 </div>
 
@@ -160,7 +141,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     className="mt-2"
                     rows={4}
-                    placeholder="Précisez vos souhaits, le nombre de personnes, etc."
+                    placeholder="Précisez le nombre de personnes, vos intentions concernant des oeuvres etc."
                   />
                 </div>
 
@@ -187,7 +168,7 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Adresse</h4>
                       <p className="text-muted-foreground">
-                        Domaine La Chénaie<br />
+                        Le chétif puit<br />
                         45500 Gien, Loiret<br />
                         France
                       </p>
@@ -198,7 +179,7 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-gallery-gold mr-4 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Téléphone</h4>
-                      <p className="text-muted-foreground">+33 2 38 67 25 28</p>
+                      <p className="text-muted-foreground">+33 6 24 01 53 19</p>
                     </div>
                   </div>
                   
@@ -206,7 +187,7 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-gallery-gold mr-4 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                      <p className="text-muted-foreground">contact@lachenaiecalmeetdetente.com</p>
+                      <p className="text-muted-foreground">contact@lachenaiedomaine.fr</p>
                     </div>
                   </div>
                   
@@ -215,42 +196,8 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-foreground mb-1">Horaires</h4>
                       <div className="text-muted-foreground text-sm space-y-1">
-                        <p>Mercredi - Dimanche: 10h - 18h</p>
-                        <p>Lundi - Mardi: Fermé</p>
                         <p className="text-gallery-gold font-medium">Visites sur rendez-vous</p>
                       </div>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-8 bg-card border-border shadow-gallery-soft">
-                <h3 className="text-xl font-bold text-foreground mb-4">
-                  Types de Visites
-                </h3>
-                
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <Users className="w-5 h-5 text-gallery-gold mr-3" />
-                    <div>
-                      <p className="font-medium text-foreground">Visite libre</p>
-                      <p className="text-sm text-muted-foreground">Découverte autonome • Gratuit</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center">
-                    <Users className="w-5 h-5 text-gallery-gold mr-3" />
-                    <div>
-                      <p className="font-medium text-foreground">Visite guidée</p>
-                      <p className="text-sm text-muted-foreground">Avec médiateur • 15€/personne</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center">
-                    <Users className="w-5 h-5 text-gallery-gold mr-3" />
-                    <div>
-                      <p className="font-medium text-foreground">Groupe (10+ pers.)</p>
-                      <p className="text-sm text-muted-foreground">Tarif dégressif • Sur demande</p>
                     </div>
                   </div>
                 </div>

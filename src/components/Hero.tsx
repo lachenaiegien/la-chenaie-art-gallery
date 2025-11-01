@@ -34,17 +34,17 @@ const Hero = () => {
             LA CHÉNAIE
           </h1>
           
-          <p className="text-xl md:text-2xl text-white/90 mb-2 font-light">
-            Art Contemporain International
+          <p className="text-xl md:text-2xl text-white/90 mb-2 font-bold">
+            Art Contemporain International et Suites Luxueuses
           </p>
           
           <p className="text-lg text-white/80 mb-8 font-light">
-            Œuvres monumentales
+            Visite du domaine privé avec ces Œuvres monumentales et réservations de nuitées hauts de gammes jusqu'à 10 personnes
           </p>
 
           <div className="flex items-center justify-center text-white/70 mb-12">
             <MapPin className="w-5 h-5 mr-2" />
-            <span className="text-lg">GIEN, Loiret</span>
+            <span className="text-lg">Le chétif puit, GIEN 45500, Loiret</span>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -67,8 +67,8 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-6 h-6 text-white/60" />
+        <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <ArrowDown className="w-6 h-6 text-white/100" />
         </div>
       </div>
     </section>

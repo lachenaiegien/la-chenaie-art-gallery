@@ -1,24 +1,87 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Chénaie - Galerie d'Art Contemporain | Exposition Jingyu BAI</title>
-    <meta name="description" content="Découvrez l'exposition exceptionnelle de sculptures contemporaines de Jingyu BAI au Domaine La Chénaie à Gien. Art contemporain international dans un cadre historique unique." />
-    <meta name="author" content="Domaine La Chénaie" />
+<html lang="fr">
+<head>
+  <!-- Base -->
+  <meta charset="UTF-8" />
+  <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+  <meta name="robots" content="index,follow" />
+  <title>Domaine La Chênaie — Galerie d’Art & Suites | Exposition Jingyu BAI</title>
+  <meta
+          name="description"
+          content="Découvrez l’exposition de sculptures contemporaines de Jingyu BAI au Domaine La Chênaie (Gien, Loiret). Visite de la galerie, hébergements, et privatisation du domaine."
+  />
+  <meta name="author" content="Domaine La Chênaie" />
+  <link rel="canonical" href="https://la-chenaie-art-gallery.vercel.app/" />
 
-    <meta property="og:title" content="La Chénaie - Galerie d'Art Contemporain | Exposition Jingyu BAI" />
-    <meta property="og:description" content="Sculptures monumentales de Jingyu BAI dans le magnifique Domaine La Chénaie à Gien, Loiret. Art contemporain international et patrimoine historique." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <!-- Favicons / PWA (met tes fichiers dans /public) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.ico" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#0f172a" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Domaine La Chênaie" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta
+          property="og:title"
+          content="Domaine La Chênaie — Galerie d’Art & Suites | Exposition Jingyu BAI"
+  />
+  <meta
+          property="og:description"
+          content="Sculptures monumentales de Jingyu BAI dans le cadre exceptionnel du Domaine La Chênaie à Gien. Exposition, visites et hébergements."
+  />
+  <!-- Mets ton image OG (1200×630) dans /public/og-image.jpg -->
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta property="og:url" content="https://la-chenaie-art-gallery.vercel.app/" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+          name="twitter:title"
+          content="Domaine La Chênaie — Galerie d’Art & Suites | Exposition Jingyu BAI"
+  />
+  <meta
+          name="twitter:description"
+          content="Exposition Jingyu BAI au Domaine La Chênaie (Gien). Galerie d’art contemporain et hébergements sur place."
+  />
+  <meta name="twitter:image" content="/og-image.jpg" />
+
+  <!-- JSON-LD (Organisation + Site) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Domaine La Chênaie",
+      "url": "https://la-chenaie-art-gallery.vercel.app/",
+      "logo": "/apple-touch-icon.png",
+      "sameAs": [
+        "https://www.instagram.com/",
+        "https://www.facebook.com/"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Domaine La Chênaie — Galerie d’Art & Suites",
+      "url": "https://la-chenaie-art-gallery.vercel.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://la-chenaie-art-gallery.vercel.app/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.tsx"></script>
+</body>
 </html>

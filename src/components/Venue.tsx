@@ -26,7 +26,7 @@ const Venue = () => {
                 <img
                   src={chateauImage}
                   alt="Château de La Chénaie"
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[800px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
               </div>
@@ -59,22 +59,22 @@ const Venue = () => {
                 <div className="space-y-4">
                   <div className="flex items-center text-muted-foreground">
                     <MapPin className="w-5 h-5 mr-3 text-gallery-gold" />
-                    <span>Domaine La Chénaie, 45500 Gien, Loiret</span>
+                    <span>Domaine La Chénaie : le chétif puit, 45500 Gien, Loiret</span>
                   </div>
                   
                   <div className="flex items-center text-muted-foreground">
                     <Clock className="w-5 h-5 mr-3 text-gallery-gold" />
-                    <span>Ouvert du mercredi au dimanche, 10h-18h</span>
+                    <span>Privé - visite sur demande</span>
                   </div>
                   
                   <div className="flex items-center text-muted-foreground">
                     <Phone className="w-5 h-5 mr-3 text-gallery-gold" />
-                    <span>+33 2 38 67 25 28</span>
+                    <span>+33 6 24 01 53 19</span>
                   </div>
                   
                   <div className="flex items-center text-muted-foreground">
                     <Mail className="w-5 h-5 mr-3 text-gallery-gold" />
-                    <span>contact@lachenaiecalmeetdetente.com</span>
+                    <span>contact@lachenaiedomaine.fr</span>
                   </div>
                 </div>
               </Card>
@@ -110,7 +110,7 @@ const Venue = () => {
                   className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full shadow-gallery-medium"
                   onClick={() => window.location.href = '/booking'}
                 >
-                  Réserver un Séjour
+                  Réserver un séjour dans l'une de nos prestigieuses suites ou privatiser tout le domaine.
                 </Button>
               </div>
             </div>
