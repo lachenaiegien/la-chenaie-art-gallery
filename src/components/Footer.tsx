@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="w-4 h-4 bg-primary-foreground rounded-full"></div>
               </div>
               <div className="text-lg font-bold text-primary-foreground">
-                LA CHÉNAIE
+                LA CHÊNAIE
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
@@ -41,17 +41,16 @@ const Footer = () => {
           <div>
             <h3 className="text-primary-foreground font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-sm text-primary-foreground/80">
-              <p>Domaine La Chénaie</p>
+              <p>Domaine La Chênaie</p>
               <p>45500 Gien, Loiret</p>
-              <p>+33 2 38 67 25 28</p>
-              <p>contact@lachenaiecalmeetdetente.com</p>
+              <p>contact@lachenaiedomaine.fr</p>
             </div>
           </div>
         </div>
         
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Domaine La Chénaie. Tous droits réservés. 
+            © 2025 Domaine La Chênaie. Tous droits réservés.
             <span className="mx-2">•</span>
             Exposition Jingyu BAI
           </p>

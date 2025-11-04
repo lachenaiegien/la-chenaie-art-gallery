@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
-            LA CHÉNAIE
+            LA CHÊNAIE
           </h1>
           
           <p className="text-xl md:text-2xl text-white/90 mb-2 font-bold">

@@ -24,7 +24,7 @@ const Header = () => {
               <div className="w-4 h-4 bg-primary rounded-full"></div>
             </div>
             <div className="text-lg font-bold text-foreground">
-              LA CHÉNAIE
+              LA CHÊNAIE
             </div>
           </Link>
 
