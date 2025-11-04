@@ -88,7 +88,7 @@ type Acc = {
 const accommodations: Acc[] = [
   {
     id: "domaine-complet",
-    name: "Domaine Complet",
+    name: "Le domaine Complet",
     priceNight: 880,
     priceWeek: 4900,
     description: "L'ensemble du domaine avec les 4 suites",
