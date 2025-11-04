@@ -92,7 +92,7 @@ const accommodations: Acc[] = [
     priceNight: 880,
     priceWeek: 4900,
     description: "L'ensemble du domaine avec les 4 suites",
-    capacity: "8-12 personnes",
+    capacity: "10 personnes",
     images: [
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/e1c6a1d0-d9ec-44aa-a6a4-a7c59050a16a.jpeg",
       "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/79611727-40c7-4c38-8876-8e48edf44eb3.jpeg",
