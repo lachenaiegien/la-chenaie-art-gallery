@@ -387,24 +387,8 @@ const Gallery = () => {
         <Footer />
 
         {/* Dialog plein-écran (mobile), modal (desktop) */}
-        <ArtworkDialog
-            open={dialogOpen}
-            onClose={() => setDialogOpen(false)}
-            artwork={
-              selectedArtwork
-                  ? {
-                    title: selectedArtwork.title,
-                    artist: selectedArtwork.artist,
-                    year: selectedArtwork.year,
-                    material: selectedArtwork.material,
-                    dimensions: selectedArtwork.dimensions,
-                    src: selectedArtwork.image,
-                    alt: selectedArtwork.title,
-                    description: selectedArtwork.description,
-                  }
-                  : null
-            }
-        />
+
+
       </div>
   );
 };
