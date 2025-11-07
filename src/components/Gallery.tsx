@@ -4,16 +4,16 @@ import { Grid, List } from "lucide-react";
 import { useState } from "react";
 
 // Import des images
-import flammesDoucesImage from "@/assets/flammes-douces.png";
-import danseRefletsImage from "@/assets/danse-reflets.png";
+import flammesDoucesImage from "@/assets/flammes-douces1.png";
+import danseRefletsImage from "@/assets/danse-reflets1.png";
 import danseTempsImage from "@/assets/danse-temps.png";
-import harmonieImage from "@/assets/harmonie.png";
+import harmonieImage from "@/assets/harmonie1.png";
 import enigmeImage from "@/assets/enigme.png";
-import ariaImage from "@/assets/aria.png";
+import ariaImage from "@/assets/aria1.png";
 import infiniteLoopImage from "@/assets/infinite-loop.png";
 import spiraleImage from "@/assets/spirale.png";
-import elanImage from "@/assets/elan.png";
-import eclatSilenceImage from "@/assets/eclat-silence.png";
+import elanImage from "@/assets/elan1.png";
+import eclatSilenceImage from "@/assets/eclat-silence1.png";
 
 const Gallery = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');

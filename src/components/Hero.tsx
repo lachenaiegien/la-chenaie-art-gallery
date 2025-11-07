@@ -3,75 +3,93 @@ import { ArrowDown, MapPin } from "lucide-react";
 import chateauImage from "@/assets/chateau-chenaie.png";
 
 const Hero = () => {
+  const scrollToGallery = () =>
+      document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" });
+
+  const scrollToVenue = () =>
+      document.getElementById("venue")?.scrollIntoView({ behavior: "smooth" });
+
   return (
-    <section id="home" className="min-h-screen relative bg-gallery-hero flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
+      <section
+          id="home"
+          className="min-h-screen relative flex items-center justify-center overflow-hidden"
+      >
+        {/* Background */}
         <img
-          src={chateauImage}
-          alt="Château de La Chénaie"
-          className="w-full h-full object-cover object-center"
+            src={chateauImage}
+            alt="Château de La Chênaie"
+            className="absolute inset-0 w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
-      </div>
 
-      {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <div className="animate-gallery-fade-in">
-          {/* Golden Keys Logo */}
-          <div className="mb-8 flex justify-center">
-            <div className="w-16 h-16 flex items-center justify-center">
-              <svg viewBox="0 0 24 24" className="w-12 h-12 text-gallery-gold">
-                <path
-                  fill="currentColor"
-                  d="M12 2L8 6H16L12 2ZM8 18L12 22L16 18L12 14L8 18Z"
-                />
-              </svg>
-            </div>
-          </div>
+        {/* Voile noir & dégradé luxe */}
+        <div className="absolute inset-0 bg-black/60 md:bg-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent"></div>
 
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">
+        {/* Content */}
+        <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg tracking-wide">
             LA CHÊNAIE
           </h1>
-          
-          <p className="text-xl md:text-2xl text-white/90 mb-2 font-bold">
-            Art Contemporain International et Suites Luxueuses
-          </p>
-          
-          <p className="text-lg text-white/80 mb-8 font-light">
-            Visite du domaine privé avec ces Œuvres monumentales et réservations de nuitées hauts de gammes jusqu'à 10 personnes
+
+          <p className="text-lg md:text-xl text-white/95 mb-3 font-semibold">
+            Art Contemporain International & Suites Luxueuses
           </p>
 
-          <div className="flex items-center justify-center text-white/70 mb-12">
-            <MapPin className="w-5 h-5 mr-2" />
-            <span className="text-lg">Le chétif puit, GIEN 45500, Loiret</span>
+          <p className="text-base md:text-lg text-white/85 mb-8">
+            Visite du domaine privé & sculptures monumentales + hébergements haut de gamme
+          </p>
+
+          {/* Location */}
+          <div className="flex items-center justify-center text-white/85 mb-10 text-sm md:text-base">
+            <MapPin className="w-4 h-4 mr-2" />
+            Le Chétif Puit, GIEN — Loiret
           </div>
 
+          {/* Buttons */}
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-gallery-gold hover:bg-gallery-gold/90 text-primary font-semibold px-8 py-3 rounded-full shadow-gallery-medium"
-              onClick={() => document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' })}
+
+            {/* CTA principal */}
+            <Button
+                size="lg"
+                className="
+      bg-[hsl(42,85%,65%)]
+      hover:bg-[hsl(42,85%,72%)]
+      text-black font-semibold px-8 py-3 rounded-full
+      shadow-[0_6px_30px_rgba(0,0,0,0.35)]
+      hover:shadow-[0_6px_35px_rgba(0,0,0,0.45)]
+      transition-all border border-[hsl(42,85%,75%)]
+    "
+                onClick={scrollToGallery}
             >
               Découvrir les Œuvres
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="bg-transparent border-white text-white hover:bg-white/10 hover:text-white px-8 py-3 rounded-full"
-              onClick={() => document.getElementById('venue')?.scrollIntoView({ behavior: 'smooth' })}
+
+            {/* CTA Réservation */}
+            <Button
+                size="lg"
+                className="
+      bg-white/90
+      hover:bg-white
+      text-black font-semibold
+      px-8 py-3 rounded-full
+      shadow-[0_4px_25px_rgba(255,255,255,0.25)]
+      transition-all
+    "
+                onClick={() => window.location.href = '/booking'}
             >
-              Visiter le Domaine
+              Réserver une Suite ou le Domaine
             </Button>
+
           </div>
+
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-14 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-6 h-6 text-white/100" />
+        {/* Scroll arrow */}
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+          <ArrowDown className="w-6 h-6 text-white/90" />
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 

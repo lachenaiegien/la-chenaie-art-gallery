@@ -8,16 +8,16 @@ import Footer from "@/components/Footer";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 // Import des images
-import flammesDoucesImage from "@/assets/flammes-douces.png";
-import danseRefletsImage from "@/assets/danse-reflets.png";
-import danseTempsImage from "@/assets/danse-temps.png";
-import harmonieImage from "@/assets/harmonie.png";
-import enigmeImage from "@/assets/enigme.png";
-import ariaImage from "@/assets/aria.png";
-import infiniteLoopImage from "@/assets/infinite-loop.png";
-import spiraleImage from "@/assets/spirale.png";
-import elanImage from "@/assets/elan.png";
-import eclatSilenceImage from "@/assets/eclat-silence.png";
+import flammesDoucesImage from "@/assets/flammes-douces1.png";
+import danseRefletsImage from "@/assets/danse-reflets1.png";
+import danseTempsImage from "@/assets/danse-temps1.png";
+import harmonieImage from "@/assets/harmonie1.png";
+import enigmeImage from "@/assets/enigme1.png";
+import ariaImage from "@/assets/aria1.png";
+import infiniteLoopImage from "@/assets/infinite-loop1.png";
+import spiraleImage from "@/assets/spirale2.png";
+import elanImage from "@/assets/elan1.png";
+import eclatSilenceImage from "@/assets/eclat-silence1.png";
 
 interface Artwork {
   id: string;

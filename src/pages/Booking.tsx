@@ -116,7 +116,7 @@ const accommodations: Acc[] = [
     name: "Les Hortensias",
     priceNight: 385,
     priceWeek: 2425,
-    description: "Logement principal avec vue sur le parc",
+    description: "Maison individuelle",
     capacity: "2-4 personnes",
     images: [
       "https://media.xmlcal.com/pic/p0029/6397/01.png",
@@ -139,7 +139,7 @@ const accommodations: Acc[] = [
     name: "Les Charmilles",
     priceNight: 209,
     priceWeek: 1315,
-    description: "Gîte chaleureux au cœur du domaine",
+    description: "",
     capacity: "2 personnes",
     images: [
       "https://media.xmlcal.com/pic/p0029/6397/14.png",
@@ -157,7 +157,7 @@ const accommodations: Acc[] = [
     name: "Les Fresnes",
     priceNight: 199,
     priceWeek: 1249,
-    description: "Cottage confortable avec jardin privatif",
+    description: "",
     capacity: "2 personnes",
     images: [
       "https://media.xmlcal.com/pic/p0029/6397/11.png",
@@ -174,7 +174,7 @@ const accommodations: Acc[] = [
     name: "Les Acacias",
     priceNight: 199,
     priceWeek: 1249,
-    description: "Studio moderne et lumineux",
+    description: "",
     capacity: "2 personnes",
     images: [
       "https://media.xmlcal.com/pic/p0029/6397/21.png",
@@ -277,7 +277,7 @@ const Booking = () => {
                           <CarouselItem key={i}>
                             <img
                                 src={img}
-                                alt={`Domaine Complet ${i}`}
+                                alt={`Domaine complet ${i}`}
                                 className="w-full h-[32rem] object-cover md:h-[36rem]"
                             />
                           </CarouselItem>
@@ -317,7 +317,7 @@ const Booking = () => {
                         className="w-full"
                         onClick={() => openBeds24({ roomid: domaine.roomId })}
                     >
-                      Réserver le Domaine Complet
+                      Réserver le Domaine complet
                     </Button>
                   </div>
                 </Card>
