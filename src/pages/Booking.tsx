@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Header from "@/components/Header";
+import HeaderGites from "@/components/HeaderGites";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -253,8 +253,8 @@ const Booking = () => {
   // Rendu principal (style inchangé)
   // -----------------------
   return (
-      <div className="min-h-screen bg-background">
-        <Header />
+    <div className="min-h-screen bg-background">
+      <HeaderGites />
         <main className="pt-24 pb-20">
           <div className="container mx-auto px-4">
             {/* ---- Titre ---- */}

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Grid, List, Filter } from "lucide-react";
 import ArtworkCard from "@/components/ArtworkCard";
-import Header from "@/components/Header";
+import HeaderGallery from "@/components/HeaderGallery";
 import Footer from "@/components/Footer";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
@@ -237,7 +237,7 @@ const Gallery = () => {
 
   return (
       <div className="min-h-screen bg-background">
-        <Header />
+        <HeaderGallery />
 
         <main className="pt-20">
           <section className="py-12 bg-background">
