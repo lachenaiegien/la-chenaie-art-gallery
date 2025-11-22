@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import HeaderGallery from "@/components/HeaderGallery";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -44,8 +44,8 @@ const Artists = () => {
   ];
 
   return (
-      <div className="min-h-screen bg-background">
-        <Header />
+    <div className="min-h-screen bg-background">
+      <HeaderGallery />
 
         <main className="pt-20">
           <section className="py-12 bg-background">
