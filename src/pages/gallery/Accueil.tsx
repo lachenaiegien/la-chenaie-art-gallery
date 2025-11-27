@@ -1,5 +1,5 @@
 import HeaderGallery from "@/components/HeaderGallery";
-import Footer from "@/components/Footer";
+import FooterGallery from "@/components/FooterGallery";
 import Artist from "@/components/Artist";
 import Contact from "@/components/Contact";
 import { Button } from "@/components/ui/button";
@@ -154,7 +154,7 @@ const GalleryAccueil = () => {
         </section>
       </main>
 
-      <Footer />
+      <FooterGallery />
     </div>
   );
 };
