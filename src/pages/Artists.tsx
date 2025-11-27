@@ -1,5 +1,5 @@
 import HeaderGallery from "@/components/HeaderGallery";
-import Footer from "@/components/Footer";
+import FooterGallery from "@/components/FooterGallery";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Globe, MapPin } from "lucide-react";
@@ -188,7 +188,7 @@ const Artists = () => {
           </section>
         </main>
 
-        <Footer />
+        <FooterGallery />
       </div>
   );
 };

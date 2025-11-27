@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Grid, List, Filter } from "lucide-react";
 import ArtworkCard from "@/components/ArtworkCard";
 import HeaderGallery from "@/components/HeaderGallery";
-import Footer from "@/components/Footer";
+import FooterGallery from "@/components/FooterGallery";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 // Dialog plein-écran mobile-friendly
@@ -384,7 +384,7 @@ const Gallery = () => {
           </section>
         </main>
 
-        <Footer />
+        <FooterGallery />
 
         {/* Dialog plein-écran (mobile), modal (desktop) */}
 
