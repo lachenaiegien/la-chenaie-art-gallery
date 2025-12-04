@@ -12,14 +12,14 @@ import ArtworkDialog from "@/components/ArtworkDialog";
 
 // Import des images
 import flammesDoucesImage from "@/assets/flammes-douces1.png";
-import danseRefletsImage from "@/assets/danse-reflets1.png";
-import danseTempsImage from "@/assets/danse-temps1.png";
-import harmonieImage from "@/assets/harmonie1.png";
-import enigmeImage from "@/assets/enigme1.png";
-import ariaImage from "@/assets/aria1.png";
+import danseRefletsImage from "@/assets/danse-reflets2.png";
+import danseTempsImage from "@/assets/danse-temps3.jpeg";
+import harmonieImage from "@/assets/harmonie2.png";
+import enigmeImage from "@/assets/enigme4.jpeg";
+import ariaImage from "@/assets/aria4.jpg";
 import infiniteLoopImage from "@/assets/infinite-loop1.png";
-import spiraleImage from "@/assets/spirale2.png";
-import elanImage from "@/assets/elan1.png";
+import spiraleImage from "@/assets/spirale4.png";
+import elanImage from "@/assets/elan4.png";
 import eclatSilenceImage from "@/assets/eclat-silence1.png";
 
 interface Artwork {

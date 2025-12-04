@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Globe, MapPin } from "lucide-react";
-import artisteImage from "@/assets/artiste.png";
+import artisteImage from "@/assets/artiste1.png";
 
 interface Artist {
   id: string;

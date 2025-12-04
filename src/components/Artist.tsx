@@ -1,13 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Award, Palette, Globe } from "lucide-react";
-import artisteImage from "@/assets/artiste.png";
+import artisteImage from "@/assets/artiste1.png";
 
 const Artist = () => {
   return (
     <section id="artist" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-6">
+                Artistes du moment
+            </h2>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Artist Photo */}
             <div className="animate-gallery-fade-in">

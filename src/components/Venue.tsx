@@ -72,10 +72,6 @@ const Venue = () => {
                     </span>
                     </div>
                     <div className="flex items-center text-muted-foreground">
-                      <Clock className="w-5 h-5 mr-3 text-gallery-gold" />
-                      <span>Privé — visites sur demande</span>
-                    </div>
-                    <div className="flex items-center text-muted-foreground">
                       <Phone className="w-5 h-5 mr-3 text-gallery-gold" />
                       <span>+33 6 24 01 53 19</span>
                     </div>

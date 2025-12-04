@@ -19,6 +19,7 @@ import elan from "@/assets/elan1.png";
 import flammesDouces from "@/assets/flammes-douces1.png";
 import harmonie from "@/assets/harmonie1.png";
 import artisteImage from "@/assets/artiste.png";
+import vuejardin from "@/assets/chateau-chenaie4.png";
 
 const GalleryAccueil = () => {
   const artworks = [
@@ -37,7 +38,7 @@ const GalleryAccueil = () => {
         {/* Hero Section */}
         <section className="min-h-screen relative flex items-center justify-center overflow-hidden">
           <img
-            src={artisteImage}
+            src={vuejardin}
             alt="Art Contemporain"
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
@@ -133,7 +134,6 @@ const GalleryAccueil = () => {
         </section>
 
         <Artist />
-        <Contact />
 
         {/* Cross-promotion vers gîtes */}
         <section className="py-16 bg-background">

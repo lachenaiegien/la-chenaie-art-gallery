@@ -28,42 +28,22 @@ const Hero = () => {
         {/* Content */}
         <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 drop-shadow-lg tracking-wide">
-            LA CHÊNAIE
+              Suites Luxueuses
           </h1>
 
           <p className="text-lg md:text-xl text-white/95 mb-3 font-semibold">
-            Art Contemporain International & Suites Luxueuses
-          </p>
-
-          <p className="text-base md:text-lg text-white/85 mb-8">
-            Visite du domaine privé & sculptures monumentales + hébergements haut de gamme
+               Nature, Art et tout le confort d'un grand hôtel
           </p>
 
           {/* Location */}
           <div className="flex items-center justify-center text-white/85 mb-10 text-sm md:text-base">
             <MapPin className="w-4 h-4 mr-2" />
-            Le Chétif Puit, GIEN — Loiret
+            Le Chétif Puit, GIEN, 45500, Loiret
           </div>
 
           {/* Buttons */}
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-
-            {/* CTA principal */}
-            <Button
-                size="lg"
-                className="
-      bg-[hsl(42,85%,65%)]
-      hover:bg-[hsl(42,85%,72%)]
-      text-black font-semibold px-8 py-3 rounded-full
-      shadow-[0_6px_30px_rgba(0,0,0,0.35)]
-      hover:shadow-[0_6px_35px_rgba(0,0,0,0.45)]
-      transition-all border border-[hsl(42,85%,75%)]
-    "
-                onClick={scrollToGallery}
-            >
-              Découvrir les Œuvres
-            </Button>
 
             {/* CTA Réservation */}
             <Button
