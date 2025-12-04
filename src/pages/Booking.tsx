@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import HeaderGites from "@/components/HeaderGites";
-import Footer from "@/components/Footer";
+import FooterGites from "@/components/FooterGites";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
@@ -393,7 +393,7 @@ const Booking = () => {
             </section>
           </div>
         </main>
-        <Footer />
+        <FooterGites />
       </div>
   );
 };

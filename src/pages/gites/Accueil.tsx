@@ -1,5 +1,5 @@
 import HeaderGites from "@/components/HeaderGites";
-import Footer from "@/components/Footer";
+import FooterGites from "@/components/FooterGites";
 import Hero from "@/components/Hero";
 import Venue from "@/components/Venue";
 import Contact from "@/components/Contact";
@@ -123,7 +123,7 @@ const GitesAccueil = () => {
         </section>
       </main>
 
-      <Footer />
+      <FooterGites />
     </div>
   );
 };
