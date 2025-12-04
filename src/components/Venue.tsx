@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Phone, Mail, Car, Train } from "lucide-react";
-import chateauImage from "@/assets/chateau-chenaie.png";
+import chateauImage from "@/assets/chateau-chenaie2.5.png";
 
 const Venue = () => {
   return (

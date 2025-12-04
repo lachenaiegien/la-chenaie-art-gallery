@@ -16,7 +16,7 @@ import danseRefletsImage from "@/assets/danse-reflets2.png";
 import danseTempsImage from "@/assets/danse-temps3.jpeg";
 import harmonieImage from "@/assets/harmonie2.png";
 import enigmeImage from "@/assets/enigme4.jpeg";
-import ariaImage from "@/assets/aria4.jpg";
+import ariaImage from "@/assets/aria6.jpeg";
 import infiniteLoopImage from "@/assets/infinite-loop1.png";
 import spiraleImage from "@/assets/spirale4.png";
 import elanImage from "@/assets/elan4.png";

@@ -11,6 +11,85 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+// import images
+import img679468415 from "../assets/gite/679468415.jpg";
+import img2397 from "../assets/gite/IMG_2397.jpg";
+import img2398 from "../assets/gite/IMG_2398.jpg";
+import img2399 from "../assets/gite/IMG_2399.jpg";
+import img2400 from "../assets/gite/IMG_2400.jpg";
+import img2405 from "../assets/gite/IMG_2405.jpg";
+import img2408 from "../assets/gite/IMG_2408.jpg";
+import img2413 from "../assets/gite/IMG_2413.jpg";
+import img2414 from "../assets/gite/IMG_2414.jpg";
+import img2415 from "../assets/gite/IMG_2415.jpg";
+import img2416 from "../assets/gite/IMG_2416.jpg";
+import img2417 from "../assets/gite/IMG_2417.jpg";
+import img2421 from "../assets/gite/IMG_2421.jpg";
+import img2422 from "../assets/gite/IMG_2422.jpg";
+import img2424 from "../assets/gite/IMG_2424.jpg";
+import img2435 from "../assets/gite/IMG_2435.jpg";
+import img2436 from "../assets/gite/IMG_2436.jpg";
+import img2437 from "../assets/gite/IMG_2437.jpg";
+import img2438 from "../assets/gite/IMG_2438.jpg";
+import img2439 from "../assets/gite/IMG_2439.jpg";
+import img2441 from "../assets/gite/IMG_2441.jpg";
+import img2442 from "../assets/gite/IMG_2442.jpg";
+import img2443 from "../assets/gite/IMG_2443.jpg";
+import img2444 from "../assets/gite/IMG_2444.jpg";
+import img2445 from "../assets/gite/IMG_2445.jpg";
+import img2446 from "../assets/gite/IMG_2446.jpg";
+import img2447 from "../assets/gite/IMG_2447.jpg";
+import img2448 from "../assets/gite/IMG_2448.jpg";
+import img2451 from "../assets/gite/IMG_2451.jpg";
+import img3777 from "../assets/gite/IMG_3777.jpg";
+import img679463829 from "../assets/gite/679463829.jpg";
+import img679463832 from "../assets/gite/679463832.jpg";
+import img679463843 from "../assets/gite/679463843.jpg";
+import img679463851 from "../assets/gite/679463851.jpg";
+import img679463866 from "../assets/gite/679463866.jpg";
+import img679463871 from "../assets/gite/679463871.jpg";
+import img679463874 from "../assets/gite/679463874.jpg";
+import img679463875 from "../assets/gite/679463875.jpg";
+//hortensias
+import img569790758 from "../assets/gite/hortensias/569790758.jpg";
+import img569790847 from "../assets/gite/hortensias/569790847.jpg";
+import img569790855 from "../assets/gite/hortensias/569790855.jpg";
+import img569790867 from "../assets/gite/hortensias/569790867.jpg";
+import img569790871 from "../assets/gite/hortensias/569790871.jpg";
+import img569790886 from "../assets/gite/hortensias/569790886.jpg";
+import img569790901 from "../assets/gite/hortensias/569790901.jpg";
+import img569790918 from "../assets/gite/hortensias/569790918.jpg";
+import img569790926 from "../assets/gite/hortensias/569790926.jpg";
+import img569790969 from "../assets/gite/hortensias/569790969.jpg";
+import img569790987 from "../assets/gite/hortensias/569790987.jpg";
+import img569790996 from "../assets/gite/hortensias/569790996.jpg";
+import img569791009 from "../assets/gite/hortensias/569791009.jpg";
+import img569791027 from "../assets/gite/hortensias/569791027.jpg";
+import img569791033 from "../assets/gite/hortensias/569791033.jpg";
+import img598897308 from "../assets/gite/hortensias/598897308.jpg";
+import img5697909480 from "../assets/gite/hortensias/5697909480.jpg";
+import img3764 from "../assets/gite/hortensias/IMG_3764.jpg";
+import img3766 from "../assets/gite/hortensias/IMG_3766.jpg";
+//fresnes
+import img679462333 from "../assets/gite/fresnes/679462333.jpg";
+import img679462351 from "../assets/gite/fresnes/679462351.jpg";
+import img679462360 from "../assets/gite/fresnes/679462360.jpg";
+import img679470483 from "../assets/gite/fresnes/679470483.jpg";
+import img679470569 from "../assets/gite/fresnes/679470569.jpg";
+import img679471268 from "../assets/gite/fresnes/679471268.jpg";
+//accacias
+import img679455872 from "../assets/gite/accacias/679455872.jpg";
+import img679455908 from "../assets/gite/accacias/679455908.jpg";
+import img679455945 from "../assets/gite/accacias/679455945.jpg";
+import img679455949 from "../assets/gite/accacias/679455949.jpg";
+import img6894 from "../assets/gite/accacias/IMG_6894.jpg";
+//Charmilles
+import img679463808 from "../assets/gite/charmilles/679463808.jpg";
+import img679463837 from "../assets/gite/charmilles/679463837.jpg";
+import img679463848 from "../assets/gite/charmilles/679463848.jpg";
+import img679463859 from "../assets/gite/charmilles/679463859.jpg";
+import img679463862 from "../assets/gite/charmilles/679463862.jpg";
+
 // -----------------
 //  Config Beds24
 // -----------------
@@ -79,6 +158,7 @@ type Acc = {
   priceWeek: number;
   description: string;
   capacity: string;
+  include: string;
   images: string[];
   widgetId: string;
   roomId: number;
@@ -89,23 +169,33 @@ const accommodations: Acc[] = [
   {
     id: "domaine-complet",
     name: "Le domaine Complet",
-    priceNight: 880,
-    priceWeek: 4900,
-    description: "L'ensemble du domaine avec les 4 suites",
+    priceNight: 879,
+    priceWeek: 4899,
+    description: "L'ensemble du domaine avec les 4 suites - retrouvez les photos de chaque suites dans la section Les Suites ci-dessous",
     capacity: "10 personnes",
+      include: "ménage et linge inclus + 1h30 de spa offert en basse saison (octobre à avril) + accès à la salle de sport, au terrain de tennis, aux jardins, à la piscine (ouverte de mai à septemnbre)",
     images: [
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/e1c6a1d0-d9ec-44aa-a6a4-a7c59050a16a.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/79611727-40c7-4c38-8876-8e48edf44eb3.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/175269e6-89d1-499d-8cc2-42451ac494f8.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/2e8735e2-7e88-4689-a196-37c22ce1b182.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/7e7f54ac-db5e-48ad-9999-1be7028f21fb.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/4a86773c-d3d0-4165-a75a-c9d4c547cda8.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/1beebb56-3fbf-45eb-b899-ba61d0dd8e25.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/4a669c87-534a-45a9-938e-b62330fc7a99.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/49123f6b-ce4b-469d-9c86-13056487addb.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/783be5e5-e075-439d-a62d-e7036547ce60.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/d298efc2-c028-4243-9274-eb161c71048c.jpeg",
-      "https://a0.muscache.com/im/pictures/hosting/Hosting-1529713116553101480/original/a1c154b5-f634-4695-a6be-63a558f93e59.jpeg",
+        //extérieur batiment
+        img679463874,
+        img679468415,
+        img679463866,
+        img569790855,
+        img569790901,
+        //salon
+        img679463829,
+        img679463875,
+        img679463832,
+        //spa
+        img2436,
+        img2435,
+        img2439,
+        img2442,
+        img2447,
+        img679463871,
+        img3777,
+
+
+
     ],
     widgetId: "bookWidget-domaine",
     roomId: 622060,       // Domaine complet
@@ -114,21 +204,31 @@ const accommodations: Acc[] = [
   {
     id: "chenaie-gien",
     name: "Les Hortensias",
-    priceNight: 385,
-    priceWeek: 2425,
+    priceNight: 379,
+    priceWeek: 2419,
     description: "Maison individuelle",
     capacity: "2-4 personnes",
-    images: [
-      "https://media.xmlcal.com/pic/p0029/6397/01.png",
-      "https://media.xmlcal.com/pic/p0029/6397/02.png",
-      "https://media.xmlcal.com/pic/p0029/6397/03.png",
-      "https://media.xmlcal.com/pic/p0029/6397/04.png",
-      "https://media.xmlcal.com/pic/p0029/6397/05.png",
-      "https://media.xmlcal.com/pic/p0029/6397/06.png",
-      "https://media.xmlcal.com/pic/p0029/6397/07.png",
-      "https://media.xmlcal.com/pic/p0029/6397/08.png",
-      "https://media.xmlcal.com/pic/p0029/6397/09.png",
-      "https://media.xmlcal.com/pic/p0029/6397/10.png",
+      include: "ménage et linge inclus + 1h30 de spa offert en basse saison (octobre à avril) + accès à la salle de sport, au terrain de tennis, aux jardins, à la piscine (ouverte de mai à septemnbre)",
+      images: [
+        img569790758,
+        img569790847,
+        img569790855,
+        img569790867,
+        img569790871,
+        img569790886,
+        img569790901,
+        img569790918,
+        img569790926,
+        img569790969,
+        img569790987,
+        img569790996,
+        img569791009,
+        img569791027,
+        img569791033,
+        img598897308,
+        img5697909480,
+        img3764,
+        img3766,
     ],
     widgetId: "bookWidget-chenaie",
     roomId: 619396,
@@ -138,15 +238,16 @@ const accommodations: Acc[] = [
     id: "les-charmilles",
     name: "Les Charmilles",
     priceNight: 209,
-    priceWeek: 1315,
-    description: "",
+    priceWeek: 1309,
+    description: "Suite",
     capacity: "2 personnes",
-    images: [
-      "https://media.xmlcal.com/pic/p0029/6397/14.png",
-      "https://media.xmlcal.com/pic/p0029/6397/16.png",
-        " https://media.xmlcal.com/pic/p0029/6397/18.png",
-        "https://media.xmlcal.com/pic/p0029/6397/15.png",
-        "https://media.xmlcal.com/pic/p0029/6397/17.png",
+      include: "ménage et linge inclus + 1h30 de spa offert en basse saison (octobre à avril) + accès à la salle de sport, au terrain de tennis, aux jardins, à la piscine (ouverte de mai à septemnbre)",
+      images: [
+          img679463837,
+          img679463808,
+        img679463848,
+        img679463859,
+        img679463862,
     ],
     widgetId: "bookWidget-charmilles",
     roomId: 619397,
@@ -157,13 +258,16 @@ const accommodations: Acc[] = [
     name: "Les Fresnes",
     priceNight: 199,
     priceWeek: 1249,
-    description: "",
+    description: "Suite",
     capacity: "2 personnes",
-    images: [
-      "https://media.xmlcal.com/pic/p0029/6397/11.png",
-      "https://media.xmlcal.com/pic/p0029/6397/12.png",
-      "https://media.xmlcal.com/pic/p0029/6397/13.png",
-        "",
+      include: "ménage et linge inclus + 1h30 de spa offert en basse saison (octobre à avril) + accès à la salle de sport, au terrain de tennis, aux jardins, à la piscine (ouverte de mai à septemnbre)",
+      images: [
+          img679470483,
+          img679470569,
+        img679462333,
+          img679471268,
+        img679462351,
+        img679462360,
     ],
     widgetId: "bookWidget-fresnes",
     roomId: 619398,
@@ -174,13 +278,15 @@ const accommodations: Acc[] = [
     name: "Les Acacias",
     priceNight: 199,
     priceWeek: 1249,
-    description: "",
+    description: "Suite",
     capacity: "2 personnes",
-    images: [
-      "https://media.xmlcal.com/pic/p0029/6397/21.png",
-      "https://media.xmlcal.com/pic/p0029/6397/20.png",
-        "https://media.xmlcal.com/pic/p0029/6397/19.png",
-        "https://media.xmlcal.com/pic/p0029/6397/22.png",
+      include: "ménage et linge inclus + 1h30 de spa offert en basse saison (octobre à avril) + accès à la salle de sport, au terrain de tennis, aux jardins, à la piscine (ouverte de mai à septemnbre)",
+      images: [
+          img679455908,
+          img6894,
+          img679455872,
+        img679455945,
+        img679455949,
     ],
     widgetId: "bookWidget-acacias",
     roomId: 619399,
@@ -256,8 +362,7 @@ const Booking = () => {
     <div className="min-h-screen bg-background">
       <HeaderGites />
         <main className="pt-24 pb-20">
-          <div className="container mx-auto px-4">
-            {/* ---- Titre ---- */}
+            <div className="max-w-7xl mx-auto px-6">            {/* ---- Titre ---- */}
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Réservation</h1>
               <p className="text-xl text-muted-foreground">
@@ -306,6 +411,9 @@ const Booking = () => {
                         -10%
                       </span>
                       </div>
+                        <div className="flex justify-center gap-2 items-baseline mt-1">
+                            <p className="text-muted-foreground mb-4">{domaine.include}</p>
+                        </div>
                     </div>
 
                     {/* Calendrier Beds24 */}
@@ -325,26 +433,32 @@ const Booking = () => {
             </section>
 
             {/* ---- Suites ---- */}
-            <section>
-              <h2 className="text-3xl font-bold text-center mb-6">Les Suites</h2>
-              <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+                <section className="mt-12">
+                    <h2 className="text-3xl font-bold text-center mb-6">Les Suites</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
                 {suites.map((suite) => (
                     <Card key={suite.id} className="overflow-hidden">
-                      <Carousel className="w-full">
-                        <CarouselContent>
-                          {suite.images.map((img, i) => (
-                              <CarouselItem key={i}>
-                                <img
-                                    src={img}
-                                    alt={`${suite.name} ${i}`}
-                                    className="w-full h-96 object-cover"
-                                />
-                              </CarouselItem>
-                          ))}
-                        </CarouselContent>
-                        <CarouselPrevious className="left-4" />
-                        <CarouselNext className="right-4" />
-                      </Carousel>
+                        <Carousel className="w-full">
+                            <CarouselContent>
+                                {suite.images.map((img, i) => (
+                                    <CarouselItem
+                                        key={i}
+                                        className="h-[24rem] md:h-[30rem]" // ajuste comme tu veux
+                                    >
+                                        <div className="relative w-full h-full">
+                                            <img
+                                                src={img}
+                                                alt={`${suite.name} ${i}`}
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <CarouselPrevious className="left-4" />
+                            <CarouselNext className="right-4" />
+                        </Carousel>
+
 
                       <div className="p-6">
                         <h3 className="text-xl font-bold mb-2">{suite.name}</h3>
@@ -365,6 +479,9 @@ const Booking = () => {
                           -10%
                         </span>
                           </div>
+                            <div className="flex justify-center gap-2 items-baseline mt-1">
+                                <p className="text-muted-foreground mb-4">{suite.include}</p>
+                            </div>
                         </div>
 
                         {/* Calendrier Beds24 */}

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, MapPin } from "lucide-react";
-import chateauImage from "@/assets/chateau-chenaie.png";
+import chateauImage from "@/assets/accueil gîte1.png";
 
 const Hero = () => {
   const scrollToGallery = () =>
@@ -31,9 +31,12 @@ const Hero = () => {
               Suites Luxueuses
           </h1>
 
-          <p className="text-lg md:text-xl text-white/95 mb-3 font-semibold">
-               Nature, Art et tout le confort d'un grand hôtel
+          <p className="text-lg md:text-3xl text-white/95 mb-3 font-semibold">
+               Nature & Art
           </p>
+            <p className="text-lg md:text-xl text-white/95 mb-3 font-semibold">
+                Spa - Piscine chauffée- Salle de sport
+            </p>
 
           {/* Location */}
           <div className="flex items-center justify-center text-white/85 mb-10 text-sm md:text-base">

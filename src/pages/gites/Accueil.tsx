@@ -77,7 +77,7 @@ const GitesAccueil = () => {
                       </p>
                       <p className="flex items-start">
                         <span className="text-gallery-gold mr-2">•</span>
-                        <span>Spa, jacuzzi et salle détente (sur réservation)</span>
+                        <span>Spa, jacuzzi et salle détente avec mur en pierre de sel (sur réservation - 1h30 incluses gratuitement d'octobre à avril)</span>
                       </p>
                       <p className="flex items-start">
                         <span className="text-gallery-gold mr-2">•</span>
@@ -102,7 +102,6 @@ const GitesAccueil = () => {
         </section>
 
         <Venue />
-        <Contact />
 
         {/* Cross-promotion vers galerie */}
         <section className="py-16 bg-gallery">
@@ -110,7 +109,7 @@ const GitesAccueil = () => {
             <div className="max-w-4xl mx-auto bg-card border border-border rounded-2xl p-8 md:p-12 shadow-gallery-soft text-center">
               <Palette className="w-12 h-12 text-gallery-gold mx-auto mb-4" />
               <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Découvrez Notre Collection d'Art
+                Découvrez aussi notre Collection d'Art Monumentale
               </h3>
               <p className="text-muted-foreground mb-6 text-lg">
                 Visitez et acquérez des œuvres contemporaines monumentales exposées dans notre domaine
