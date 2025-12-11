@@ -48,7 +48,7 @@ const App = () => (
                     <Route path="/artists" element={<Artists />} />
 
                     {/* PAGE SEO pour Google */}
-                    {/* <Route path="/art-gien" element={<ArtGien />} />*/}
+                    {/*  <Route path="/art-gien" element={<ArtGien />} />*/}
 
                     {/* Catch-all */}
                     <Route path="*" element={<NotFound />} />
