@@ -15,7 +15,7 @@ import spiraleImage from "@/assets/spirale.png";
 import elanImage from "@/assets/elan1.png";
 import eclatSilenceImage from "@/assets/eclat-silence1.png";
 
-const Gallery = () => {
+const Galerie = () => {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
   const artworks = [
@@ -184,4 +184,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Galerie;

@@ -159,7 +159,7 @@ const Artists = () => {
                           {/* Contact */}
                           <div className="flex flex-wrap gap-4 pt-4 border-t border-border">
                             <Button asChild>
-                              <a href="/gallery">Voir ses œuvres</a>
+                              <a href="/galerie">Voir ses œuvres</a>
                             </Button>
                           </div>
                         </div>
@@ -179,7 +179,7 @@ const Artists = () => {
                   notre cadre exceptionnel.
                 </p>
                 <Button asChild>
-                  <a href="mailto:contact@lachenaiedomaine.fr">
+                  <a href="mailto:contact@galerie-art-lachenaie.fr">
                     Proposer une exposition ou des œuvres
                   </a>
                 </Button>

@@ -50,7 +50,7 @@ const HomePage = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-gallery-gold/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </Link>
 
-          {/* Gallery Section */}
+          {/* Galerie Section */}
           <Link
             to="/gallery/accueil"
             className="group relative overflow-hidden rounded-3xl border-2 border-white/30 hover:border-white/60 bg-white/10 hover:bg-white/20 backdrop-blur-sm transition-all duration-500 p-10 hover:scale-105 hover:shadow-2xl"

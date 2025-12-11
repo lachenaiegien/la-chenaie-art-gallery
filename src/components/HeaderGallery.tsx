@@ -8,8 +8,8 @@ const HeaderGallery = () => {
   const location = useLocation();
 
   const navigation = [
-    { name: "Accueil Galerie", href: "/gallery/accueil" },
-    { name: "Œuvres", href: "/gallery" },
+    { name: "Accueil Galerie", href: "/galerie/accueil" },
+    { name: "Œuvres", href: "/galerie" },
     { name: "Artistes", href: "/artists" },
   ];
 

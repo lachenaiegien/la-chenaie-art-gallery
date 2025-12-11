@@ -23,18 +23,18 @@ const FooterGallery = () => {
           <div>
             <h3 className="text-primary-foreground font-semibold mb-4">Navigation</h3>
             <nav className="space-y-2">
-              <Link to="/gallery/accueil" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
+              <Link to="/galerie/accueil" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
                 Accueil Galerie
               </Link>
-              <Link to="/gallery" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
+              <Link to="/galerie" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
                 Toutes les Œuvres
               </Link>
               <Link to="/artists" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
                 Les artistes
               </Link>
-                <Link to="/galleriste" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
-                    Le galleriste
-                </Link>
+                {/*<Link to="/galleriste" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">*/}
+                {/*    Le galeriste*/}
+                {/*</Link>*/}
             </nav>
           </div>
           
@@ -43,7 +43,7 @@ const FooterGallery = () => {
             <div className="space-y-2 text-sm text-primary-foreground/80">
               <p>Domaine La Chênaie</p>
               <p>45500 Gien, Loiret</p>
-              <p>contact@gallerie-art-lachenaie.fr</p>
+              <p>contact@galerie-art-lachenaie.fr</p>
                 <p>
                     <a href="tel:+33682860369">+33 6 82 86 03 69</a>
                 </p>

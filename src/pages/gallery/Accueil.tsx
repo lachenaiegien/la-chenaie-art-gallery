@@ -21,7 +21,7 @@ import harmonie from "@/assets/harmonie1.png";
 import artisteImage from "@/assets/artiste.png";
 import vuejardin from "@/assets/chateau-chenaie4.png";
 
-const GalleryAccueil = () => {
+const GalerieAccueil = () => {
   const artworks = [
     { src: danseReflets, alt: "Danse des Reflets" },
     { src: eclatSilence, alt: "Éclat du Silence" },
@@ -65,7 +65,7 @@ const GalleryAccueil = () => {
                 className="bg-gallery-gold hover:bg-gallery-gold/90 text-primary font-semibold px-8 py-3 rounded-full shadow-gallery-medium"
                 asChild
               >
-                <Link to="/gallery">Voir Toutes les Œuvres</Link>
+                <Link to="/galerie">Voir Toutes les Œuvres</Link>
               </Button>
 
               <Button
@@ -74,7 +74,7 @@ const GalleryAccueil = () => {
                 className="bg-white/90 hover:bg-white text-primary font-semibold px-8 py-3 rounded-full"
                 asChild
               >
-                <Link to="/artists">Découvrir l'Artiste</Link>
+                <Link to="/artists">Découvrir les Artistes</Link>
               </Button>
             </div>
           </div>
@@ -126,7 +126,7 @@ const GalleryAccueil = () => {
 
               <div className="flex justify-center mt-10">
                 <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  <Link to="/gallery">Voir la Collection Complète</Link>
+                  <Link to="/galerie">Voir la Collection Complète</Link>
                 </Button>
               </div>
             </div>
@@ -172,4 +172,4 @@ const GalleryAccueil = () => {
   );
 };
 
-export default GalleryAccueil;
+export default GalerieAccueil;

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* La Chénaie Gallery Design System - Sophisticated art gallery with natural elegance
+/* La Chénaie Galerie Design System - Sophisticated art gallery with natural elegance
 All colors MUST be HSL.
 */
 
@@ -47,7 +47,7 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Gallery-specific design tokens */
+    /* Galerie-specific design tokens */
     --gallery-hero: linear-gradient(135deg, hsl(45 25% 97%) 0%, hsl(40 20% 92%) 100%);
     --gallery-sculpture: linear-gradient(135deg, hsl(210 15% 85%) 0%, hsl(200 20% 90%) 100%);
     --gallery-gold: 42 85% 65%;

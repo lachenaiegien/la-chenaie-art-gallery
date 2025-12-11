@@ -31,20 +31,20 @@ const App = () => (
 
                 <link
                     rel="canonical"
-                    href="https://www.gallerie-art-lachenaie.fr/"
+                    href="https://www.galerie-art-lachenaie.fr/"
                 />
 
                 <meta property="og:title" content="Galerie d’Art Contemporain à Gien - La Chênaie" />
                 <meta property="og:description" content="Découvrez les sculptures monumentales et les œuvres de Jingyu Bai à Gien dans le Loiret." />
-                <meta property="og:url" content="https://www.gallerie-art-lachenaie.fr/" />
+                <meta property="og:url" content="https://www.galerie-art-lachenaie.fr/" />
                 <meta property="og:type" content="website" />
             </Helmet>
 
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<GalleryAccueil />} />
-                    <Route path="/gallery/accueil" element={<GalleryAccueil />} />
-                    <Route path="/gallery" element={<Gallery />} />
+                    <Route path="/galerie/accueil" element={<GalleryAccueil />} />
+                    <Route path="/galerie" element={<Gallery />} />
                     <Route path="/artists" element={<Artists />} />
 
                     {/* PAGE SEO pour Google */}

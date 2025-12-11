@@ -57,7 +57,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Gallery-specific colors
+        // Galerie-specific colors
         gallery: {
           gold: "hsl(var(--gallery-gold))",
           forest: "hsl(var(--gallery-forest))",
