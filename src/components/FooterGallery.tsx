@@ -30,11 +30,11 @@ const FooterGallery = () => {
                 Toutes les Œuvres
               </Link>
               <Link to="/artists" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
-                L'Artiste
+                Les artistes
               </Link>
-              <Link to="/" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
-                Retour à l'accueil
-              </Link>
+                <Link to="/galleriste" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
+                    Le galleriste
+                </Link>
             </nav>
           </div>
           
@@ -43,7 +43,10 @@ const FooterGallery = () => {
             <div className="space-y-2 text-sm text-primary-foreground/80">
               <p>Domaine La Chênaie</p>
               <p>45500 Gien, Loiret</p>
-              <p>art@lachenaiedomaine.fr</p>
+              <p>contact@gallerie-art-lachenaie.fr</p>
+                <p>
+                    <a href="tel:+33682860369">+33 6 82 86 03 69</a>
+                </p>
               <p className="mt-3 text-gallery-gold font-semibold">
                 Sculptures monumentales
               </p>

@@ -135,23 +135,36 @@ const GalleryAccueil = () => {
 
         <Artist />
 
-        {/* Cross-promotion vers gîtes */}
-        <section className="py-16 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto bg-domaine border border-border rounded-2xl p-8 md:p-12 shadow-gallery-soft text-center">
-              <Home className="w-12 h-12 text-gallery-gold mx-auto mb-4" />
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-                Séjournez au Domaine
-              </h3>
-              <p className="text-muted-foreground mb-6 text-lg">
-                Réservez une suite luxueuse et profitez d'un séjour d'exception au cœur du domaine
-              </p>
-              <Button asChild size="lg" className="bg-gallery-gold hover:bg-gallery-gold/90 text-primary font-semibold">
-                <Link to="/gites/accueil">Découvrir nos Hébergements</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+          <section className="py-8 bg-background">
+              <div className="container mx-auto px-4">
+                  <div className="max-w-2xl mx-auto bg-domaine border border-border rounded-lg p-5 md:p-6 shadow-sm text-center">
+                      <Home className="w-8 h-8 text-gallery-gold mx-auto mb-2" />
+
+                      <h3 className="text-lg md:text-xl font-bold text-foreground mb-2">
+                          Séjournez au Domaine
+                      </h3>
+
+                      <p className="text-muted-foreground mb-3 text-sm md:text-base leading-relaxed">
+                          Réservez une suite luxueuse et profitez d'un séjour d'exception au cœur du domaine
+                      </p>
+
+                      <Button
+                          asChild
+                          size="sm"
+                          className="bg-gallery-gold hover:bg-gallery-gold/90 text-primary font-semibold"
+                      >
+                          <a
+                              href="https://www.lachenaiedomaine.fr/"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                          >
+                              Découvrir nos Hébergements
+                          </a>
+                      </Button>
+                  </div>
+              </div>
+          </section>
+
       </main>
 
       <FooterGallery />
