@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 
 import Home from "./pages/Home";
 import GalleryAccueil from "./pages/gallery/Accueil";
+import Galeriste from "./pages/gallery/Galeriste";
 import Gallery from "./pages/Gallery";
 import Artists from "./pages/Artists";
 import NotFound from "./pages/NotFound";
@@ -46,6 +47,7 @@ const App = () => (
                     <Route path="/galerie/accueil" element={<GalleryAccueil />} />
                     <Route path="/galerie" element={<Gallery />} />
                     <Route path="/artists" element={<Artists />} />
+                    <Route path="/galerie/galeriste" element={<Galeriste />} />
 
                     {/* PAGE SEO pour Google */}
                     {/*  <Route path="/art-gien" element={<ArtGien />}  />*/}

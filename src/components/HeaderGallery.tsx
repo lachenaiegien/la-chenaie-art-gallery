@@ -11,6 +11,7 @@ const HeaderGallery = () => {
     { name: "Accueil Galerie", href: "/galerie/accueil" },
     { name: "Œuvres", href: "/galerie" },
     { name: "Artistes", href: "/artists" },
+    { name: "Le Galeriste", href: "/galerie/galeriste" },
   ];
 
   return (

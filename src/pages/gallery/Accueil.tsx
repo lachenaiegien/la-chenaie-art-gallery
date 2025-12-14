@@ -1,7 +1,7 @@
 import HeaderGallery from "@/components/HeaderGallery";
 import FooterGallery from "@/components/FooterGallery";
 import Artist from "@/components/Artist";
-import Contact from "@/components/Contact ";
+import Contact from "@/components/Contact";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Home, ArrowDown } from "lucide-react";
