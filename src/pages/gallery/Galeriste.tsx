@@ -76,7 +76,6 @@ const Galeriste = () => {
                           Issu du <strong>monde entrepreneurial</strong>, <strong>Jean-Louis SAGET</strong> reprend à l’âge de <strong>vingt-et-un ans</strong> un <strong>domaine viticole familial</strong>, qu’il développe avec <strong>exigence et vision</strong> sur plusieurs décennies.
                           Sa carrière est entièrement consacrée à <strong>l’accroissement du potentiel culturel, patrimonial et commercial</strong> de l’activité viticole.
                       </p>
-
                       <p>
                           Il fonde et structure ainsi <strong>une dizaine de sociétés</strong> implantées <strong>le long de la Loire</strong>, contribuant activement au <strong>rayonnement de ce territoire</strong>.
                       </p>
