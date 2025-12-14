@@ -3,7 +3,7 @@ import FooterGallery from "@/components/FooterGallery";
 import { Link } from "react-router-dom";
 import { Home, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import legaleriste from "@/assets/jean-louis2.png";
+import legaleriste from "@/assets/Jean-louis2.png";
 
 const Galeriste = () => {
   return (
