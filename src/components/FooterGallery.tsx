@@ -32,9 +32,9 @@ const FooterGallery = () => {
               <Link to="/artists" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
                 Les artistes
               </Link>
-                {/*<Link to="/galleriste" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">*/}
-                {/*    Le galeriste*/}
-                {/*</Link>*/}
+              <Link to="/galerie/galeriste" className="block text-primary-foreground/80 hover:text-primary-foreground text-sm transition-colors">
+                Le Galeriste
+              </Link>
             </nav>
           </div>
           
